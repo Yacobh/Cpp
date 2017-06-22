@@ -1,6 +1,5 @@
 #include <iostream>
 
-
 int checkInt();
 
 int main(){
@@ -18,10 +17,6 @@ int main(){
   }
 
 }
-
-
-
-
 
 int checkInt()
 {
