@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdexcept>
 
 int checkInt();
 
