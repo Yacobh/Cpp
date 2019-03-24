@@ -11,6 +11,7 @@ functions to specific and generals problems
 -----
 ## Bank.cpp
 A class that model a bank account
+
 ------
 ## The folder Bank_acount
 In this folder are 3 files. An example of main and the class Account divided in .h and.cpp
