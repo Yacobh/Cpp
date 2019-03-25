@@ -15,3 +15,7 @@ A class that model a bank account
 ------
 ## The folder Bank_acount
 In this folder are 3 files. An example of main and the class Account divided in .h and.cpp
+
+------
+## The Aurora college
+In this program is presented a way to show the tuition for a college that increases his value 2 percent each year during  years
