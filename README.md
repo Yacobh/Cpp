@@ -19,3 +19,7 @@ In this folder are 3 files. An example of main and the class Account divided in 
 ------
 ## The Aurora college
 In this program is presented a way to show the tuition for a college that increases his value 2 percent each year during  years
+
+-------
+## Converter 
+Is a program that manipulates strings in order to make a propper word an uppercase words... it has a problem making it more than once. trohw an out_of_range exception
