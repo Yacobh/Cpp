@@ -23,3 +23,7 @@ In this program is presented a way to show the tuition for a college that increa
 -------
 ## Converter 
 Is a program that manipulates strings in order to make a propper word an uppercase words... it has a problem making it more than once. trohw an out_of_range exception
+
+--------
+## Ascii
+A simple iteration loopthat print out all the values of the ascii code
