@@ -27,3 +27,7 @@ Is a program that manipulates strings in order to make a propper word an upperca
 --------
 ## Ascii
 A simple iteration loopthat print out all the values of the ascii code
+
+--------
+## Cipher Vigenere
+An encriptation algorithm
