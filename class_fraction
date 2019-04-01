@@ -1,0 +1,118 @@
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+//YOU Can take a look over my profile:
+// https://www.coursehero.com/profile/jacobocordova/
+
+
+// Fraction class declaration
+class Fraction {
+	unsigned int num;
+	unsigned int den;
+	
+public:
+	Fraction(void);
+	Fraction(int, int);
+	Fraction operator+(Fraction);
+	Fraction operator-(Fraction);
+	Fraction operator*(Fraction);
+	Fraction operator/(Fraction);
+	int getNum(void);
+	int getDen(void);
+	int MCD(Fraction);
+	void reduce(void);
+};
+
+
+
+int main(int argc, char** argv) {
+	int N,D;
+	while(true){
+	cout<<"Please insert the numerator: ";
+	cin >> N;
+	cout<<"Please insert the denominator: ";
+	cin >> D;
+	Fraction x=Fraction(N,D);
+	x.reduce();
+	cout<< x.getNum() << "/" <<x.getDen() << "\n\n";
+	}
+	return 0;
+}
+
+
+
+int Fraction::MCD(Fraction h){
+	int u=h.getNum();
+    int v=h.getDen();
+     if(v==0){
+          return u;
+     }
+     int r;
+     while(v!=0){
+          r=u%v;
+          u=v;
+          v=r;
+     }
+     return u;
+	
+}
+
+Fraction::Fraction(void){
+	num=0;
+	den=1;
+}
+
+//Create a constructor that prevents a 0 denominator in a fraction, 
+//reduces or simplifies fractions that are not in reduced form and 
+//avoids negative denominators.
+
+Fraction::Fraction(int a, int b){
+	num=a;
+	if(b>0)
+	den=b;
+		
+	else
+	cout<< " not is posible make that function";
+}
+
+Fraction Fraction::operator+(Fraction h)  {
+		Fraction temp;
+		temp.den=den*h.getDen();
+		temp.num=den*h.getNum()+num*h.getDen();
+		temp.reduce();
+		return temp;
+				
+}
+
+Fraction Fraction::operator*(Fraction h){
+		Fraction temp;
+		temp.den=den*h.getDen();
+		temp.num=num*h.getNum();
+		temp.reduce();
+		return temp;
+}
+
+Fraction Fraction::operator/(Fraction h){
+		Fraction temp;
+		temp.den=den*h.getNum();
+		temp.num=num*h.getDen();
+		temp.reduce();
+		return temp;
+}
+	
+int Fraction::getDen(void){
+	return den;
+}
+
+int Fraction::getNum(void){
+	return num;
+}
+
+void Fraction::reduce(void){
+	int mcd = MCD(*this);
+    num /= mcd;
+    den /= mcd;
+	
+}
