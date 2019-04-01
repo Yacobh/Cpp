@@ -31,3 +31,7 @@ A simple iteration loopthat print out all the values of the ascii code
 --------
 ## Cipher Vigenere
 An encriptation algorithm
+
+--------------
+## Class_fraction
+In this file there are the development of the class fraction who is able to make the basics operations, reduce the fraction anb obtain the MCD
